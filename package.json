@@ -1,0 +1,26 @@
+{
+  "name": "cpm_sunil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSunilDev/ConstructionManagement.git"
+  },
+  "author": "Sunilkumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DSunilDev/ConstructionManagement/issues"
+  },
+  "homepage": "https://github.com/DSunilDev/ConstructionManagement#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

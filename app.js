@@ -9,6 +9,11 @@ app.use(express.urlencoded({extended:true}))
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
+//Static Folders
+
+app.use(express.static('img'));
+app.use(express.static('videos'));
+app.use(express.static('css'));
 
 //Home Page Route - Acts as Dashboard of the Software 
 

@@ -33,6 +33,27 @@ app.get('/login',function(req,res){
     res.render('login')
 })
 
+//Project Log for Admin Users
+
+app.get('/projectlog',function(req,res)
+{
+    res.render('project')
+})
+
+
+//Form for customer to submit the data
+
+app.get('/contact',function(req,res)
+{
+    res.render('contact')
+})
+
+//Messages from Customer
+
+app.get('/Messages',function(req,res)
+{
+    res.render('messages')
+})
 
 //About the Software Page
 
@@ -40,6 +61,27 @@ app.get('/about',function(req,res)
 {
     res.render('about')
 })
+
+//Task addition 
+
+app.get('/newproject',function(req,res)
+{
+    res.render('createproject')
+})
+
+//Dashboard
+app.get('/dashboard',function(req,res)
+{
+    res.render('dashboard')
+})
+
+//AddStake Holder 
+
+app.get('/addstakeholder',function(req,res)
+{
+    res.render('addstakeholder')
+})
+
 
 
 app.use(function(req,res)

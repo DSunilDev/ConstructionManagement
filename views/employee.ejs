@@ -27,11 +27,14 @@
     </script>
 </head>
 <body>
+    <%- include('navbar') %>
+    <center>
     <h1>Employee Management</h1>
     <ul id="employeeList"></ul>
     <button onclick="addEmployee()">Add Employee</button>
     <button onclick="removeEmployee()">Remove Last Employee</button>
     <button onclick="countEmployees()">Count Employees</button>
     <button onclick="highlightEmployees()">Highlight Employees</button>
+    </center>
 </body>
 </html>

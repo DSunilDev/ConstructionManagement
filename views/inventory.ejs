@@ -1,4 +1,5 @@
-name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
 <title>Inventory Management</title>
 <script>
     function addItem() {
@@ -19,10 +20,13 @@ name="viewport" content="width=device-width, initial-scale=1.0">
 </script>
 </head>
 <body>
+    <%- include('navbar') %>
+<center>
 <h1>Inventory Management</h1>
 <ul id="inventoryList"></ul>
 <button onclick="addItem()">Add Item</button>
 <button onclick="clearInventory()">Clear Inventory</button>
 <button onclick="countItems()">Count Items</button>
+</center>
 </body>
 </html>

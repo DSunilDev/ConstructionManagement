@@ -27,9 +27,36 @@
     </style>
 </head>
 <body onload="showAlert(); showDate()">
+    <%- include('navbar') %>
     <h1>Dashboard</h1>
     <p>Current Time: <span id="clock"></span></p>
     <p>Current Date: <span id="date"></span></p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Projects</h5>
+                    <p class="card-text">1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Ongoing Projects</h5>
+                    <p class="card-text">1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Tasks</h5>
+                    <p class="card-text">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <button onclick="changeTheme()">Toggle Theme</button>
     <button onclick="refreshPage()">Refresh Page</button>
 </body>

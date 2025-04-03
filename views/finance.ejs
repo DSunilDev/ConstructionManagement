@@ -10,7 +10,7 @@
             if(amount) {
                 let list = document.getElementById("expenseList");
                 let li = document.createElement("li");
-                li.textContent = `$${amount}`;
+                li.textContent = `Rs.${amount}`;
                 list.appendChild(li);
             }
         }
@@ -18,15 +18,18 @@
             let items = document.getElementById("expenseList").children;
             let total = 0;
             for(let item of items) {
-                total += parseFloat(item.textContent.replace("$", ""));
+                total += parseFloat(item.textContent.replace("Rs.", ""));
             }
-            alert("Total Expense: $" + total);
+            alert("Total Expense: Rs." + total);
         }
     </script>
 </head>
 <body>
+    <%- include('navbar') %>
+    <center>
     <h1>Finance Management</h1>
     <ul id="expenseList"></ul>
     <button onclick="addExpense()">Add Expense</button>
     <button onclick="calculateTotal()">Calculate Total Expense</button>
+    </center>
 </body>

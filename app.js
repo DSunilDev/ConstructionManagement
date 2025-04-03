@@ -82,6 +82,42 @@ app.get('/addstakeholder',function(req,res)
     res.render('addstakeholder')
 })
 
+//Employee Management Page
+
+app.get('/employee',function(req,res)
+{
+    res.render('employee')
+})
+
+
+//Finance 
+
+app.get('/finance',function(req,res)
+{
+    res.render('finance')
+})
+
+//Inventory Management
+
+app.get('/inventory',function(req,res)
+{
+    res.render('inventory')
+})
+
+//Task Sheet
+
+app.get('/tasksheet',function(req,res)
+{
+    res.render('tasks')
+})
+
+
+//Modified Dashboard
+
+app.get('/newdashboard',function(req,res)
+{
+    res.render('mdashboard')
+})
 
 
 app.use(function(req,res)

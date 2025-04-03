@@ -1,0 +1,28 @@
+name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Management</title>
+<script>
+    function addItem() {
+        let item = prompt("Enter inventory item:");
+        if(item) {
+            let list = document.getElementById("inventoryList");
+            let li = document.createElement("li");
+            li.textContent = item;
+            list.appendChild(li);
+        }
+    }
+    function clearInventory() {
+        document.getElementById("inventoryList").innerHTML = "";
+    }
+    function countItems() {
+        alert("Total Items: " + document.getElementById("inventoryList").children.length);
+    }
+</script>
+</head>
+<body>
+<h1>Inventory Management</h1>
+<ul id="inventoryList"></ul>
+<button onclick="addItem()">Add Item</button>
+<button onclick="clearInventory()">Clear Inventory</button>
+<button onclick="countItems()">Count Items</button>
+</body>
+</html>

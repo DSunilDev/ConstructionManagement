@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <script>
+        function addTask() {
+            let task = prompt("Enter new task:");
+            if(task) {
+                let list = document.getElementById("taskList");
+                let li = document.createElement("li");
+                li.textContent = task;
+                list.appendChild(li);
+            }
+        }
+        function removeTask() {
+            let list = document.getElementById("taskList");
+            if(list.lastChild) list.removeChild(list.lastChild);
+        }
+    </script>
+</head>
+<body>
+    <h1>Task Management</h1>
+    <ul id="taskList"></ul>
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="removeTask()">Remove Last Task</button>
+</body>
+</html>

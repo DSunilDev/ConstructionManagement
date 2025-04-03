@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <script>
+        function addEmployee() {
+            let name = prompt("Enter employee name:");
+            if(name) {
+                let list = document.getElementById("employeeList");
+                let li = document.createElement("li");
+                li.textContent = name;
+                list.appendChild(li);
+            }
+        }
+        function removeEmployee() {
+            let list = document.getElementById("employeeList");
+            if(list.lastChild) list.removeChild(list.lastChild);
+        }
+        function countEmployees() {
+            alert("Total Employees: " + document.getElementById("employeeList").children.length);
+        }
+        function highlightEmployees() {
+            document.getElementById("employeeList").style.backgroundColor = "lightyellow";
+        }
+    </script>
+</head>
+<body>
+    <h1>Employee Management</h1>
+    <ul id="employeeList"></ul>
+    <button onclick="addEmployee()">Add Employee</button>
+    <button onclick="removeEmployee()">Remove Last Employee</button>
+    <button onclick="countEmployees()">Count Employees</button>
+    <button onclick="highlightEmployees()">Highlight Employees</button>
+</body>
+</html>
